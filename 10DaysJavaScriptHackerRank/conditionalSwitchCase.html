@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional If Else</title>
+    <a href="https://www.hackerrank.com/challenges/js10-switch/problem"></a>
+</head>
+
+<body>
+    <h1>Conditional Switch Case</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-switch/problem"> Conditional Scwitch case</a>
+</body>
+<script>
+    function getLetter(s) {
+        let letter;
+        
+        // Write your code here
+        switch(true){
+            case (("aeiou").includes(s[0])):
+                console.log(true)
+                letter="A";
+                break;
+            case("bcdfg".includes(s[0])):
+                letter="B"
+                break;
+            case("hjklm".includes(s[0])):
+                letter="C" 
+                break;
+            case("npqrstuwxyz".includes(s[0])):
+                letter="D"
+                break;        
+        }
+
+        return letter;
+    }
+    console.log(getLetter('adft'))
+</script>
+
+</html>

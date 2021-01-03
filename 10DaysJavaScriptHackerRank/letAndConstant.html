@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let and Constant</title>
+</head>
+<body>
+    <h1>Let And Constant</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-let-and-const/problem">Let and Const</a>
+</body>
+<script>
+    function main() {
+        // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+        const PI=Math.PI
+        console.log(PI)
+        let radius=readLine()
+        // Print the area of the circle:
+        let area=PI*(radius**2);
+        console.log(area)
+        // Print the perimeter of the circle:
+        let perimeter=2*PI*radius;
+        console.log(perimeter)
+        try {    
+            // Attempt to redefine the value of constant variable PI
+            PI = 0;
+            // Attempt to print the value of PI
+            console.log(PI);
+        } catch(error) {
+            console.error("You correctly declared 'PI' as a constant.");
+        }
+    }
+    main()
+</script>
+</html>

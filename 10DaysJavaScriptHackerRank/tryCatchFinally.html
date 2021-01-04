@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch Finally</title>
+
+</head>
+<body>
+    <h1>Try Catch Finally</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-try-catch-and-finally/problem">Try Catch Finally</a>
+</body>
+<script>
+    function reverseString(s) {
+        try{
+            let split=s.split("");
+            split=split.reverse();
+            console.log(split.join(""));
+        }
+        catch(err){
+            console.log(err.message);
+            console.log(s);
+        }
+    }
+    //Another input Number(1234)
+    console.log(reverseString('1234'));
+</script>
+</html>

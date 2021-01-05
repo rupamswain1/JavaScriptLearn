@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Rectangle Object</title>
+</head>
+<body>
+    <h1>Create Rectangle Object</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-objects/problem">Link to Create Rectangle object problem</a>
+</body>
+<script>
+    /*
+ * Complete the Rectangle function
+ */
+function Rectangle(a, b) {
+    let obj={
+        length:a,
+        width:b,
+        perimeter:2*(a+b),
+        area:(a*b)
+    };
+    return obj;
+}
+console.log(Rectangle(4,5));
+</script>
+</html>

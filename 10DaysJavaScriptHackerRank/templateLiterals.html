@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+<body>
+    <h1>Template Literals</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-class/problem">Template Literals</a>
+</body>
+<script>
+
+/*
+ * Determine the original side lengths and return an array:
+ * - The first element is the length of the shorter side
+ * - The second element is the length of the longer side
+ * 
+ * Parameter(s):
+ * literals: The tagged template literal's array of strings.
+ * expressions: The tagged template literal's array of expression values (i.e., [area, perimeter]).
+ */
+function sides(literals, ...expressions) {
+    let a=expressions[0];
+    let p=expressions[1];
+    let x;
+    let y;
+    x=(p+(Math.sqrt((p**2)-16*a)))/4;
+    y=(p-(Math.sqrt((p**2)-16*a)))/4;
+    let result=[x,y];
+    return result.sort();
+ }
+ 
+ 
+ function main() {
+     let s1 = 14;
+     let s2 = 10;
+     
+     [s1, s2] = [s1, s2].sort();
+     
+     const [x, y] = sides`The area is: ${s1 * s2}.\nThe perimeter is: ${2 * (s1 + s2)}.`;
+     
+     console.log((s1 === x) ? s1 : -1);
+     console.log((s2 === y) ? s2 : -1);
+ }
+ main()
+</script>
+</html>

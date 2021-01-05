@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Objects</title>
+</head>
+<body>
+    <h1>Count Objects</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-count-objects/problem">Count Objects Link</a>
+</body>
+<script>
+    function getCount(objects) {
+        let count=0;
+        for (let i=0;i<objects.length;i++){
+            if(objects[i].x==objects[i].y){
+                count=count+1;
+            }
+        }
+        return count;
+    }
+    let a=[ { x: 1, y: 1 },
+
+    { x: 2, y: 3 },
+  
+    { x: 3, y: 3 },
+  
+    { x: 3, y: 4 },
+  
+    { x: 4, y: 5 } ];
+    getCount(a);
+
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Classes</title>
+</head>
+
+<body>
+    <h1>Java Script Class Problem</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-class/problem">Java Script Class Problem link</a>
+</body>
+<script>
+    /*
+ * Implement a Polygon class with the following properties:
+ * 1. A constructor that takes an array of integer side lengths.
+ * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
+ */
+    class Polygon {
+        constructor(a) {
+            this.a = a;
+
+
+        }
+        perimeter() {
+            //console.log(this.a);
+            let peri = 0;
+            for (let i = 0; i < this.a.length; i++) {
+                peri = peri + this.a[i];
+            }
+            return peri;
+
+        }
+    }
+
+    const rectangle = new Polygon([10, 20, 10, 20]);
+    const square = new Polygon([10, 10, 10, 10]);
+    const pentagon = new Polygon([10, 20, 30, 40, 43]);
+
+    console.log(rectangle.perimeter());
+    console.log(square.perimeter());
+    console.log(pentagon.perimeter());
+</script>
+
+</html>

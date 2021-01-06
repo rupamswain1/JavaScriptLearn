@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Date</title>
+</head>
+<body>
+    <h1>Javascript Date</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-date/topics/javascript-dates">Javascrit date</a>
+</body>
+<script>
+    // The days of the week are: "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+function getDayName(dateString) {
+    let dayName;
+    // Write your code here
+    let dayNameList=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let d=new Date(dateString).getDay();
+    dayName=dayNameList[d];
+    return dayName;
+}
+console.log(getDayName("01/01/2021"));
+</script>
+</html>

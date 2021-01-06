@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression 1</title>
+
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-regexp-1/problem">Regular Expression 1</a>
+</body>
+<script>
+    function regexVar() {
+        /*
+         * Declare a RegExp object variable named 're'
+         * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+         */
+        let re=/^([aeiou]).+\1$/;
+        
+        /*
+         * Do not remove the return statement
+         */
+        return re;
+    }
+    
+    
+    function main() {
+        const re = regexVar();
+        const s = readLine();
+        
+        console.log(re.test(s));
+    }
+</script>
+</html>

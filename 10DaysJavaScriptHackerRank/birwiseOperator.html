@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise operatior</title>
+</head>
+<body>
+    <h1>Bit Wise Operator</h1> 
+    <a href="https://www.hackerrank.com/challenges/js10-bitwise/problem">BitWise Operaton</a>   
+</body>
+<script>
+    function getMaxLessThanK(n,k){
+       
+        let max_value=0;
+        for(let i=1; i<n;i++){
+            for(let j=i+1;j<n+1;j++){
+                let numb=Number(i&j);
+               // console.log(numb);
+                    if(numb<k){
+                    if(numb>max_value){
+                        max_value=numb;}    
+                }
+                if(max_value>k){
+                    max_value=1;
+                }
+            }}
+        
+        
+        return max_value;
+    }
+    console.log(getMaxLessThanK(2,2))
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h1>Arrow Functions</h1>
+    <a href="https://www.hackerrank.com/challenges/js10-arrows/problem">Arrow Function</a>
+</body>
+<script>
+    /*
+ * Modify and return the array so that all even elements are doubled and all odd elements are tripled.
+ * 
+ * Parameter(s):
+ * nums: An array of numbers.
+ */
+function modifyArray(nums) {
+    let modArray=nums.map((e)=>{
+         if(e%2===0){
+             return e*2;
+         }
+         else{
+             return e*3;
+         }   
+    });
+    return modArray;
+}
+console.log(modifyArray([1,2,3,4,5]))
+</script>
+</html>

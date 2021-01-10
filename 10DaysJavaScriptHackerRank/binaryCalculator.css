@@ -1,0 +1,36 @@
+body{
+    width: 33%;
+    position: relative;
+}
+#res{
+    
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+#btn0, #btn1{
+    background-color: lightgreen;
+    color:brown;
+}
+
+.num{
+    background-color: lightgreen;
+    color: brown;
+
+}
+button[class*="numSide"]{
+    background-color: darkgreen;
+    color1:white;
+}
+button[class*="opr"]{
+    background-color: black;
+    color: red;
+}
+button{
+    width:25%;
+    height:36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
